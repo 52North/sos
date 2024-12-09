@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.n52.sensorweb-server.sos</groupId>
         <artifactId>sos-parent</artifactId>
-        <version>6.0.4</version>
+        <version>6.0.5-SNAPSHOT</version>
     </parent>
      <artifactId>sos-handler</artifactId>
     <packaging>jar</packaging>

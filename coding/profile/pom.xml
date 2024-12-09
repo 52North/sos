@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.n52.sensorweb-server.sos</groupId>
         <artifactId>sos-coding</artifactId>
-        <version>6.0.4</version>
+        <version>6.0.5-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>sos-profile-coding</artifactId>
