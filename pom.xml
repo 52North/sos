@@ -89,7 +89,7 @@
 		<!-- 52N dependency versions -->
 		<version.n52.common.xml>2.7.0</version.n52.common.xml>
 		<version.arctic-sea>10.1.1</version.arctic-sea>
-		<version.helgoland.api>3.5.1</version.helgoland.api>
+		<version.helgoland.api>3.5.2</version.helgoland.api>
 		<version.db-model>4.0.3</version.db-model>
 		<version.dao-impl>4.0.5</version.dao-impl>
 		<version.helgoland-adapters>2.0.1</version.helgoland-adapters>
