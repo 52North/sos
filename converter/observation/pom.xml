@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.n52.sensorweb-server.sos</groupId>
         <artifactId>sos-converter</artifactId>
-        <version>6.0.4-SNAPSHOT</version>
+        <version>6.0.4</version>
     </parent>
     <artifactId>sos-observation-converter</artifactId>
     <name>52°North SOS - Observation Converter</name>
