@@ -25,3 +25,9 @@ updates:
     versions: ">= 3.x"
   - dependency-name: "com.cosium.spring.data:*"
     versions: ">= 3.x"
+    rebase-strategy: "auto" # Automatically rebases PRs to resolve conflicts
+    pull-request-branch-name:
+      separator: "-" # Configures branch naming for PRs
+    labels:
+      - "dependencies"
+      - "auto-merge"
