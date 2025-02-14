@@ -119,7 +119,8 @@ public class FeatureOfInterestCacheUpdate extends AbstractThreadableDatasourceCa
 
     private DbQuery createDatasetDbQuery(FeatureEntity feature) {
         IoParameters parameters = IoParameters.createDefaults()
-                .extendWith(IoParameters.FEATURES, Long.toString(feature.getId()));
+                .extendWith(IoParameters.FEATURES, Long.toString(feature.getId()))
+                .extendWith(IoParameters.SELECT, "id");
         return createDbQuery(parameters);
     }
 

@@ -107,7 +107,22 @@ public class OfferingCacheUpdateTask extends AbstractThreadableDatasourceCacheUp
         this.offering = session.load(OfferingEntity.class, offeringId);
         this.identifier = offering.getIdentifier();
         if (datasets != null) {
-            this.datasets.addAll(new DatasetDao(session).get(createDatasetDbQuery(offeringId)));
+            DatasetDao<DatasetEntity> dao = new DatasetDao<>(session);
+            Map<String, String> map = Maps.newHashMap();
+            map.put(IoParameters.OFFERINGS, Long.toString(offeringId));
+            map.put(IoParameters.EXPANDED, "false");
+            map.put(IoParameters.SELECT, "1");
+            DbQuery initQuery = createDbQuery(IoParameters.createFromSingleValueMap(map));
+            map.clear();
+
+
+            map.put(IoParameters.EXPANDED, "true");
+            DbQuery expandedQuery = createDbQuery(IoParameters.createFromSingleValueMap(map));
+
+            // Two-Stage requesting to avoid unnecessary joins
+            for (DatasetEntity ds : dao.get(initQuery)) {
+                this.datasets.add(dao.getInstance(ds.getId(), expandedQuery));
+            }
         }
     }
 

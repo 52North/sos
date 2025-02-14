@@ -46,19 +46,19 @@
             <OnMatch>DENY</OnMatch>
         </filter>
         <encoder>
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{0} -
-                %msg%n</pattern>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{0} - %msg%n</pattern>
         </encoder>
     </appender>
 
     <logger name="org.n52" level="INFO" />
+    <logger name="org.n52.sos.aquarius" level="DEBUG" />
     <logger name="org.springframework" level="WARN" />
     <logger name="org.hibernate.engine.internal.StatefulPersistenceContext" level="ERROR" />
     <logger name="org.hibernate.SQL" level="ERROR" />
     <logger name="org.hibernate.type.descriptor.sql" level="ERROR" />
 
     <root level="INFO">
-        <appender-ref ref="STDOUT" />
         <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT" />
     </root>
 </configuration>

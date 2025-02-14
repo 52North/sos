@@ -548,7 +548,7 @@
     },
     "service.capabilitiesCacheUpdate" : {
       "type" : "string",
-      "value" : "0 0/120 * * * ?"
+      "value" : "0 30 * * * ?"
     },
     "serviceIdentification.title" : {
       "type" : "multilingual",

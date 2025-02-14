@@ -228,7 +228,7 @@ public class SosCacheFeederHandler implements CacheFeederHandler {
 
     private void logCacheLoadTime(long startTime) {
         Period cacheLoadPeriod = new Period(startTime, System.currentTimeMillis());
-        LOGGER.debug("Cache load finished in {} ({} seconds)",
+        LOGGER.info("Cache load finished in {} ({} seconds)",
                 PeriodFormat.getDefault().print(cacheLoadPeriod.normalizedStandard()),
                 cacheLoadPeriod.toStandardSeconds());
     }

@@ -7,30 +7,6 @@
         {
             "name": "localhost",
             "url": "http://localhost:8080/api/"
-        },
-		{
-            "name": "nexos.demo.52north",
-            "url": "https://nexos.demo.52north.org/52n-sos-nexos-test/api/"
-        },
-        {
-            "name": "sensorwebclient-webapp-stable",
-            "url": "https://sensorweb.demo.52north.org/sensorwebclient-webapp-stable/api/v1/"
-        },
-        {
-            "name": "geo.irceline.be",
-            "url": "https://geo.irceline.be/sos/api/v1/"
-        },
-        {
-            "name": "fluggs.wupperverband.de",
-            "url": "https://fluggs.wupperverband.de/sws5/api/"
-        },
-        {
-            "name": "52north - Sensorwebtestbed",
-            "url": "https://sensorweb.demo.52north.org/sensorwebtestbed/api/v1/"
-        },
-        {
-            "name": "STA-Test",
-            "url": "https://calgary-aq-sta.sensorup.com/v1.0/"
         }
     ],
     "languages": [
