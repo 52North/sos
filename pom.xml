@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.n52.sensorweb-server.sos</groupId>
 	<artifactId>sos-parent</artifactId>
-	<version>6.0.5</version>
+	<version>6.0.6-SNAPSHOT</version>
 	<name>52°North Sensor Observation Service</name>
 	<description>52°North Sensor Observation Service - Parent POM for defining dependency versions</description>
 	<url>https://github.com/52North/SOS</url>
@@ -20,7 +20,7 @@
 		<url>https://github.com/52North/SOS</url>
 		<connection>scm:git:https://github.com/52North/SOS.git</connection>
 		<developerConnection>scm:git:https://github.com/52North/SOS.git</developerConnection>
-		<tag>v6.0.5</tag>
+		<tag>v6.0.0-PR.18</tag>
 	</scm>
 
 	<issueManagement>
